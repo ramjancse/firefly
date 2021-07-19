@@ -1,13 +1,53 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family:'Mulish';
+}
+.textAbout{
+  text-align: justify;
+}
+.row_here{
+  --bs-gutter-x:0px;
+}
+.active{
+ border-bottom: 1px solid rgba(0,0,0,.9);
+}
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+#header .brand{
+  color:cornflowerblue;
+}
+.headerBorder{
+  border-bottom: 1px solid gray;
+  width: 20%;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.galary{
+  border: none;
 }
+.galary:hover{
+  animation: newEffect 1s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes newEffect{
+  0%{
+    transform: scale(1.02);
+  }
+  100%{
+    transform: scale(0.995);
+  }
+}
+
+@keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
